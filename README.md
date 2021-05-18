@@ -1,7 +1,9 @@
 # GIFgraph
 
 version: 0.1.0
+
 author: Henry Taylor
+
 author_email: henrysrtaylor@gmail.com
 
 GIFgraph is a simple libary to help create animated data driven visuals. Version 0.1.0 includes support for four types of chart: scatter, pie, bar, and line. 
