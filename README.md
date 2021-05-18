@@ -9,6 +9,7 @@ GIFgraph was created and imagined to be used within single cells as part of a da
 Arguments for each can be found here, and also accessed within code by calling help(function): 
 
 GG_bar:
+    
     Params: 
                 x - x-axis data.
                 y - y-axis data.
@@ -26,6 +27,7 @@ GG_bar:
 
 
  GG_line:
+    
     Params: 
                 x - x-axis data.
                 y - y-axis data.
@@ -42,7 +44,8 @@ GG_bar:
                 show_GIF - Bool, True or False.
 
 GG_scatter:
-	   Params: 
+	
+	Params: 
                 x - x-axis data.
                 y - y-axis data.
                 xname - x-axis name.
@@ -59,7 +62,8 @@ GG_scatter:
 
 
 GG_pie: 
-	    Params: 
+	
+	Params: 
                 x - x-axis data.
                 y - y-axis data.
                 name - Title of GIF.
