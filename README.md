@@ -1,16 +1,29 @@
-# GIFgraph
+Version: 0.1.0 || Author: Henry Taylor || Email: henrysrtaylor@gmail.com
 
-version: 0.1.0 || author: Henry Taylor || author_email: henrysrtaylor@gmail.com
+------------
 
-GIFgraph is a simple libary to help create animated data driven visuals. Version 0.1.0 includes support for four types of chart: scatter, pie, bar, and line. 
 
-GIFgraph was created and imagined to be used within single cells as part of a data science/ analytics solution and therefore works best in conjunction with Jupyter notebooks.
 
-Arguments for each can be found here, and also accessed within code by calling help(function): 
+## How to install:
+
+You can install with PyPi from your command terminal: 
+>*pip install GIFgraph*
+
+## How To Use:
+GIFgraph is a simple libary to help create animated data driven visuals. 
+
+The library was created and imagined to be used within single cells as part of a data science/ analytics solution and therefore works best in conjunction with Jupyter notebooks.
+
+Version 0.1.0 includes support for four types of chart: scatter (GG_scatter), pie (GG_pie), bar (GG_bar), and line (GG_line). Upon calling these functions with appropriate arguments, a window will appear displaying the animation. A user can find these animations, along with individual frames on their desktop (or a user specified path) under GIfgraph. All arguments are specified for each function in the following section.
+
+Please note: all testing is performed on Windows and therefore functionality may not be fully supported for Mac and Linux systems. 
+
+## Arguments: 
+Arguments for each functioin can be found here, and also accessed within code by calling help(function). 
 
 GG_bar:
-    
-    Params: 
+
+	Parameters: 
                 x - x-axis data.
                 y - y-axis data.
                 xname - x-axis name.
@@ -26,9 +39,9 @@ GG_bar:
                 show_GIF - Bool, True or False.
 
 
- GG_line:
-    
-    Params: 
+GG_line:
+
+	Parameters: 
                 x - x-axis data.
                 y - y-axis data.
                 xname - x-axis name.
@@ -44,8 +57,8 @@ GG_bar:
                 show_GIF - Bool, True or False.
 
 GG_scatter:
-	
-	Params: 
+
+	Parameters: 
                 x - x-axis data.
                 y - y-axis data.
                 xname - x-axis name.
@@ -62,8 +75,8 @@ GG_scatter:
 
 
 GG_pie: 
-	
-	Params: 
+
+	Parameters: 
                 x - x-axis data.
                 y - y-axis data.
                 name - Title of GIF.
