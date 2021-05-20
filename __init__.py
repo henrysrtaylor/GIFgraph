@@ -1,4 +1,4 @@
-__version__ = "0.1.0"
+__version__ = "0.1.2"
 __author__ = 'Henry Taylor'
 __authoremail__ = 'henrysrtaylor@gmail.com'
 
@@ -16,6 +16,7 @@ import pyglet
 import os
 from shutil import rmtree
 import numpy as np
+import sysconfig
 
 #######################################################################################################
 # Setup
@@ -24,7 +25,8 @@ import numpy as np
 colors_default_list = ['yellow', 'red', 'blue', 'green', 'pink', 'purple', 'cyan', 'black', 'brown', 'navy', 'lawngreen', 'grey', 'tan', 'gold', 'darkred', 'turquoise', 'yellow', 'red', 'blue', 'green', 'pink', 'purple', 'cyan', 'black', 'brown', 'navy', 'lawngreen', 'grey', 'tan', 'gold', 'darkred', 'turquoise', 'yellow', 'red', 'blue', 'green', 'pink', 'purple', 'cyan', 'black', 'brown', 'navy', 'lawngreen', 'grey', 'tan', 'gold', 'darkred', 'turquoise']
 
 desktop_file_path = os.path.join(os.path.join(os.path.expanduser('~')), 'Desktop') 
-print(desktop_file_path)
+
+pip_module_path = (sysconfig.get_paths()["purelib"] + "\\GIFgraph\\").replace("\\", "\\\\")
 
 #######################################################################################################
 # Functions: Backend
@@ -38,7 +40,7 @@ def natural_keys(text):
         """Orders converted text into natural integer ordering."""
         return [atoi(c) for c in re.split('(\d+)',text)]
 
-def display_gif(file_path="C:\\Users\\Henry\\Desktop\\DataScience\\PYprojects\\GIFgraph\\doggy.gif", window_name= "Animated Graph"):
+def display_gif(file_path=pip_module_path+"\\doggy.gif", window_name= "Animated Graph"):
         """Displays GIF if option is selected.
         Parameters: 
                 file_path - Where GIF is saved.
@@ -53,7 +55,7 @@ def display_gif(file_path="C:\\Users\\Henry\\Desktop\\DataScience\\PYprojects\\G
         h = anisprite.height
 
         window = pyglet.window.Window(w, h, window_text)
-        icon = pyglet.image.load('graph_icon.png')
+        icon = pyglet.image.load(pip_module_path+"graph_icon.png")
         window.set_icon(icon)
 
         r,g,b,alpha = 0.5,0.5,0.8,0.5
@@ -445,4 +447,3 @@ def GG_pie(x:object, y:object, name:str="title", explode:object="Default_Value",
 
     #### animate GIF ####  
     animate_frames(name=name, type="Pie", milsec=milsec, loop=loop, folder_to_store_frames=folder_to_store_frames, folder_to_create=folder_to_create, show_GIF=show_GIF, easter_egg=easter_egg)
-
