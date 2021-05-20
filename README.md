@@ -5,7 +5,7 @@
 
 
 
-Version: 0.1.0 || Author: Henry Taylor || Email: henrysrtaylor@gmail.com
+Version: 0.1.2 || Author: Henry Taylor || Email: henrysrtaylor@gmail.com
 
 ------------
 
@@ -21,7 +21,7 @@ GIFgraph is a simple libary to help create animated data driven visuals.
 
 The library was created and imagined to be used within single cells as part of a data science/ analytics solution and therefore works best in conjunction with Jupyter notebooks.
 
-Version 0.1.0 includes support for four types of chart: scatter (GG_scatter), pie (GG_pie), bar (GG_bar), and line (GG_line). Upon calling these functions with appropriate arguments, a window will appear displaying the animation. A user can find these animations, along with individual frames on their desktop (or a user specified path) under GIfgraph. All arguments are specified for each function in the following section.
+Version 0.1.2 includes support for four types of chart: scatter (GG_scatter), pie (GG_pie), bar (GG_bar), and line (GG_line). Upon calling these functions with appropriate arguments, a window will appear displaying the animation. A user can find these animations, along with individual frames on their desktop (or a user specified path) under GIfgraph. All arguments are specified for each function in the following section.
 
 Please note: all testing is performed on Windows and therefore functionality may not be fully supported for Mac and Linux systems. 
 
