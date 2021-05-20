@@ -1,3 +1,10 @@
+
+# GIFgraph
+------------
+
+
+
+
 Version: 0.1.0 || Author: Henry Taylor || Email: henrysrtaylor@gmail.com
 
 ------------
